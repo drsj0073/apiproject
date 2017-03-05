@@ -18,6 +18,8 @@ header {
   box-shadow: inset 20px 0 80px 6px rgba(0, 0, 0, 1);
 }
 
+
+
 .earth:after {
   content: "";
   position: absolute;
@@ -41,23 +43,36 @@ header {
   background: radial-gradient(circle at 100px 100px, #fff, #000);
 }
 
+@media (max-width: 940px) {
+  .earth {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .earth {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .earth {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  @keyframes rotate {
+    0% {background-position: 0 0;}
+    100% {background-position: 630px 0;}
+  }
+}
+
 @keyframes rotate {
   0% {background-position: 0 0;}
   100% {background-position: 1230px 0;}
 }
-
-// @media (max-width: 768px) {
-//   .earth {
-//     width: 400px;
-//     height: 400px;
-//     background-size: 830px;
-//   }
-//   @keyframes rotate {
-//   0% {background-position: 0 0;}
-//   100% {background-position: 830px 0;}
-// }
-// }
-
 
 .hero{
 	display: flex;

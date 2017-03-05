@@ -35,10 +35,27 @@ body {
 .planet__container {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+}
+
+@media (max-width: 768px) {
+	.planet__container {
+		flex-direction: column;
+		figure {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+	}
 }
 
 .planet__user-results {
 	width: 50%;
+}
+
+@media (max-width: 768px) {
+	.planet__user-results {
+		width: 100%;
+	}
 }
 
 .hidden {

@@ -196,6 +196,7 @@ h1, h2, h3, p {
 .planet__description {
   display: flex;
   justify-content: center;
+  align-content: center;
   padding: 10px;
   font-family: 'Inconsolata', monospace;
   font-size: 1.2rem;
@@ -209,11 +210,33 @@ h1, h2, h3, p {
   .planet__description span {
     color: #E25F4D; }
 
-.planet__user-response {
+@media (max-width: 768px) {
+  .planet__description ul {
+    padding: 10px; } }
+@media (max-width: 480px) {
+  .planet__description {
+    font-size: 1rem; } }
+.planet__user-response,
+.mars__apiReturn {
   color: #FAFAFA;
-  text-align: center;
   font-family: 'Inconsolata', monospace;
   padding: 15px; }
+
+.planet__user-response {
+  font-size: 1.1rem; }
+  .planet__user-response li {
+    padding: 5px; }
+
+.mars__apiReturn {
+  color: #499ED7;
+  text-align: center; }
+
+.footer-text {
+  text-align: center;
+  color: #1A1A1A; }
+  .footer-text a {
+    text-decoration: none;
+    color: #E25F4D; }
 
 .information {
   background-color: #499ED7; }
@@ -309,6 +332,25 @@ header {
   opacity: 0.2;
   background: radial-gradient(circle at 100px 100px, #fff, #000); }
 
+@media (max-width: 940px) {
+  .earth {
+    margin-bottom: 50px; } }
+@media (max-width: 768px) {
+  .earth {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 50px; } }
+@media (max-width: 480px) {
+  .earth {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px; }
+
+  @keyframes rotate {
+    0% {
+      background-position: 0 0; }
+    100% {
+      background-position: 630px 0; } } }
 @keyframes rotate {
   0% {
     background-position: 0 0; }
@@ -375,11 +417,21 @@ body {
 
 .planet__container {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center; }
 
+@media (max-width: 768px) {
+  .planet__container {
+    flex-direction: column; }
+    .planet__container figure {
+      text-align: center;
+      margin-bottom: 15px; } }
 .planet__user-results {
   width: 50%; }
 
+@media (max-width: 768px) {
+  .planet__user-results {
+    width: 100%; } }
 .hidden {
   display: none; }
 
