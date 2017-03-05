@@ -85,22 +85,27 @@ h1, h2, h3, p {
 }
 
 .planet__description {
-	text-align: center;
+	display: flex;
+	justify-content: center;
 	padding: 10px;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Inconsolata', monospace;
+	font-size: 1.2rem;
 	color: $white;
+	ul {
+		padding: 20px;
+	}
+	ul:last-child {
+		padding-right: 0;
+	}
+	li {
+		padding: 5px;
+	}
+	span {
+		color: $orange;
+	}
 }
 
-.planet__greeting {
-	text-align: center;
-	color: $lightBlue;
-	font-family: 'Josefin Sans', sans-serif;
-	padding-top: 50px;
-	font-weight: 400;
-	font-size: 1.4rem;
-}
-
-.mercury__user-response {
+.planet__user-response {
 	color: $white;
 	text-align: center;
 	font-family: 'Inconsolata', monospace;

@@ -1,3 +1,52 @@
+var planets = {
+    mercuryWeight: function() {
+         return userWeight/9.81 * 3.7;
+    },
+    mercuryWeather: function() {
+        return 167 - locationTemp; 
+    },
+    // mercuryAge: function() {
+    //     return userAge/87.97;
+    // },
+    venus: function() {
+         return userWeight/9.81 * 8.87;
+    },
+    venusWeather: function() {
+        return 462 - locationTemp; 
+    },
+    mars: function() {
+         return userWeight/9.81 * 3.711;
+    },
+    marsWeather: function() {
+        return planetTemp - locationTemp; 
+    },
+    jupiter: function() {
+         return userWeight/9.81 * 24.79;
+    },
+    jupiterWeather: function() {
+        return -145 - locationTemp; 
+    },
+    saturn: function() {
+         return userWeight/9.81 * 10.44;
+    },
+    saturnWeather: function() {
+        return -178 - locationTemp; 
+    },
+    uranus: function() {
+         return userWeight/9.81 * 8.69;
+    },
+    uranusWeather: function() {
+        return -216 - locationTemp; 
+    },
+    neptune: function() {
+         return userWeight/9.81 * 11.15;
+    },
+    neptuneWeather: function() {
+        return -218 - locationTemp; 
+    },
+}
+
+
     /****************************************/
 
     /***** LOCAL WEATHER *****/
@@ -34,25 +83,57 @@
         var location = data.name;
         locationTemp = data.main.temp;
         totalTemp = locationTemp - planetTemp;
-        mercuryWeather = (167 - locationTemp); 
-        venusWeather = 462;
-        jupiterWeather = -145;
-        saturnWeather = -178;
-        uranusWeather = -216;
-        neptuneWeather = -218;
+        compareTempToMercury = planets.mercuryWeather();
+        weightOnMercury = planets.mercuryWeight();
+        // ageOnMercury = planets.mercuryAge();
+        
+
 
         // Returns info after information form is submitted
         var userResults = `Hey ${name}, it look's like you weigh ${userWeight} pounds and you're from ${location}, which is currently ${locationTemp}&deg;C. With this information we can calculate your weight on all of the planets in our solar system and compare ${location}'s temperature.`
         //Adds user input to information section
         $('.hello-user').html(userResults);
 
+        // ****** PLANETS BEGIN ****** // 
+
+        // *** MERCURY ** //
+
         // Returns temp comparison for Mercury after information form is submitted
-        var mercuryWeatherComparison = `Since it's currently ${locationTemp}&deg;C in ${location}, Mercury is around ${mercuryWeather}&deg;C hotter.`
+        var mercuryWeatherComparison = `Since it's currently ${locationTemp}&deg;C in ${location}, Mercury's average temperature is around ${compareTempToMercury}&deg;C hotter.`
 
         $('.mercury__weather-comparison').html(mercuryWeatherComparison);
 
         // Returns weight comparison for Mercury after information form is submitted
-         var mercuryWeightComparison = `On Earth you weigh ${userWeight}, that means you would weigh ${weightDifference} on mercury.`
+         var mercuryWeightComparison = `On Earth you weigh ${userWeight} pounds, that means you would weigh approximately ${weightOnMercury.toFixed(0)} pounds on mercury.`
+
+        $('.mercury__weight-comparison').html(mercuryWeightComparison);
+
+        // Returns age comparison for Mercury after information form is submitted
+
+        // var mercuryAgeComparison = `Looks like your ${userAge} years old. Since Mecury takes 87.97 days to rotate the sun, you would be ${ageOnMercury} years old!`
+
+        // $('.mercury__age-comparison').html(mercuryAgeComparison);
+
+
+
+        // *** VENUS ** //
+
+        // Returns info after information form is submitted
+        var userResults = `Hey ${name}, it look's like you weigh ${userWeight} pounds and you're from ${location}, which is currently ${locationTemp}&deg;C. With this information we can calculate your weight on all of the planets in our solar system and compare ${location}'s temperature.`
+        //Adds user input to information section
+        $('.hello-user').html(userResults);
+
+        // ****** PLANETS BEGIN ****** // 
+
+        // *** MERCURY ** //
+
+        // Returns temp comparison for Mercury after information form is submitted
+        var mercuryWeatherComparison = `Since it's currently ${locationTemp}&deg;C in ${location}, Mercury's average temperature is around ${compareTempToMercury}&deg;C hotter.`
+
+        $('.mercury__weather-comparison').html(mercuryWeatherComparison);
+
+        // Returns weight comparison for Mercury after information form is submitted
+         var mercuryWeightComparison = `On Earth you weigh ${userWeight} pounds, that means you would weigh approximately ${weightOnMercury.toFixed(0)} pounds on mercury.`
 
         $('.mercury__weight-comparison').html(mercuryWeightComparison);
     };

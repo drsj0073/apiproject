@@ -10,6 +10,7 @@
 @import "components/information";
 @import "components/particles";
 @import "components/header";
+@import "components/section-backgrounds";
 
 body {
 	color: #555;
@@ -40,70 +41,9 @@ body {
 	width: 50%;
 }
 
-// MECURY SECTION 
-.mercury-section {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/stars.jpg);
-	background-size: cover;
-	background-position: center;
-	animation: rotate 60s linear infinite;
-  	transform-style: preserve-3d;
-
-}
-
-@keyframes rotate {
-  0% {background-position: 0 0;}
-  100% {background-position: 1280px 0;}
-}
-
 .hidden {
 	display: none;
 }
-
-
-// VENUS SECTION 
-.venus-section {
-	// background-image: url(../img/venus2.png);
-	// background-repeat: no-repeat;
-	// background-position: center;
-}
-// EARTH SECTION 
-.earth-section {
-	// background-image: url(../img/earth3.png);
-	// background-repeat: no-repeat;
-	// background-position: center;
-}
-// MARS SECTION 
-.mars-section {
-	// background-image: url(../img/mars4.png);
-	// background-repeat: no-repeat;
-	// background-position: center;
-}
-// JUPITER SECTION 
-.jupiter-section {
-	// background-image: url(../img/jupiter5.png);
-	// background-repeat: no-repeat;
-	// background-position: center;
-}
-// SATURN SECTION 
-.saturn-section {
-	// background-image: url(../img/saturn6.png);
-	// background-repeat: no-repeat;
-	// background-position: center;
-}
-// URANUS SECTION 
-.uranus-section {
-	// background-image: url(../img/uranus7.png);
-	// background-repeat: no-repeat;
-	// background-position: center;
-}
-// NEPTUNE SECTION 
-.neptune-section {
-	// background-image: url(../img/neptune8.png);
-	// background-repeat: no-repeat;
-	// background-position: center;
-}
-
-
 
 // GLOBAL
 

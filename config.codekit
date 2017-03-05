@@ -11,13 +11,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/img\/background.png": {
-		"fileType": 32768,
+	"\/img\/background1.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3.71556e+06,
-		"inputAbbreviatedPath": "\/img\/background.png",
-		"outputAbbreviatedPath": "\/img\/background.png",
+		"initialSize": 643047,
+		"inputAbbreviatedPath": "\/img\/background1.jpg",
+		"outputAbbreviatedPath": "\/img\/background1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/background2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 173494,
+		"inputAbbreviatedPath": "\/img\/background2.jpg",
+		"outputAbbreviatedPath": "\/img\/background2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -95,17 +106,6 @@
 		"initialSize": 697034,
 		"inputAbbreviatedPath": "\/img\/saturn6.png",
 		"outputAbbreviatedPath": "\/img\/saturn6.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/stars.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 643047,
-		"inputAbbreviatedPath": "\/img\/stars.jpg",
-		"outputAbbreviatedPath": "\/img\/stars.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -230,6 +230,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scss\/components\/_particles.scss",
 		"outputAbbreviatedPath": "\/scss\/css\/_particles.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/scss\/components\/_section-backgrounds.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/components\/_section-backgrounds.scss",
+		"outputAbbreviatedPath": "\/scss\/css\/_section-backgrounds.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

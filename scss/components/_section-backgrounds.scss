@@ -1,0 +1,47 @@
+.mercury-section,
+.venus-section,
+.mars-section,
+.jupiter-section,
+.saturn-section,
+.uranus-section,
+.neptune-section {
+		background-size: cover;
+		background-position: center;
+		animation: rotate 90s linear infinite;
+}
+
+// MECURY SECTION 
+.mercury-section {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background1.jpg);
+}
+
+// VENUS SECTION 
+.venus-section {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background2.jpg);
+}
+
+// MARS SECTION 
+.mars-section {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background1.jpg);
+}
+// JUPITER SECTION 
+.jupiter-section {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background2.jpg);
+}
+// SATURN SECTION 
+.saturn-section {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background1.jpg);
+}
+// URANUS SECTION 
+.uranus-section {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background2.jpg);
+}
+// NEPTUNE SECTION 
+.neptune-section {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background1.jpg);
+}
+
+@keyframes rotate {
+  0% {background-position: 0 0;}
+  100% {background-position: 1280px 0;}
+}
