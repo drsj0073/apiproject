@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Api project by John Dirstein, using 2 apis to create a playful app.">
+	<meta name="keywords" content="hackeryou, api, wanted">
+	<meta name="author" content="John Dirstein">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather</title>
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Josefin+Sans:400,700" rel="stylesheet">
+</head>
+<body>
+	<div id="particles-js"></div>
+	<header>
+
+		<div class="hero">
+			<div class="earth"></div>
+			<div hero__text-box>	
+				<h1 class="hero__title hero__title--white hero__title--thin">Discover the universe</h1>
+				<p class="hero__subtitle hero__subtitle--light-blue hero__subtitle--centered">A fun, interactive place to learn about space!</p>
+			</div>  <!-- End of hero text box -->			
+		</div>
+	</header>
+
+	<section class="information">
+		<div class="wrapper">	
+			<h2 class="section-title section-title--centered section-title--thin section-title--white">Enter some information for us!</h2>
+			<h3 class="section-subtitle section-subtitle--orange section-subtitle--centered">We'll use your info to return some really cool facts</h3>
+			<div class="form__container">	
+				<form id="form" autocomplete="off">
+					<div class="form__column">
+						<input type="text" name="username" id="form__userName" placeholder="Enter your name" required>
+						<input type="number" name="weight" id="form__userWeight" placeholder="Enter your weight" required>
+					</div> <!-- End of form column -->
+					<div class="form__column">
+						<input type="text" name="city" id="form__city" placeholder="Enter a city" required>
+						<input type="text" name="country" id="form__country" placeholder="Enter a country code. Ie: 'CA'" required>
+					</div> <!-- End of form column -->
+					<button>Submit</button>
+				</form> <!-- End of introduction form -->
+				<div class="user-introduction hidden">
+					<h3 class="hello-user"></h3>
+				</div> 
+			</div>
+		</div> <!-- End of wrapper -->
+	</section>
+
+	<section class="mercury-section">
+		<div class="wrapper">
+			<div class="planet__container">
+				<figure>
+					<img src="img/mercury1.png" alt="mercury" class="test">
+				</figure>
+				<div class="planet__user-results">
+					<h3 class="planet__name">Mercury</h3>
+					<p class="planet__description">The first and smallest planet in our solar system. Mercury can be as hot as 427&deg;C on the side facing the sun. The night side drops to a freezing - 173&deg;C</p>
+					<ul class="mercury__user-response">
+						<li class="mercury__weather-comparison"></li>
+						<li class="mercury__weight-comparison"></li>
+					</ul>
+				</div>
+			</div>
+		</div> <!-- End of mercury wrapper -->
+	</section> 
+
+	<section class="venus-section">
+		<div class="wrapper">
+			<div class="planet__container">
+				<div class="planet__user-results">
+					<h3 class="planet__name">Mercury</h3>
+					<p class="planet__description">The first and smallest planet in our solar system. Mercury can be as hot as 427&deg;C on the side facing the sun. The night side drops to a freezing - 173&deg;C</p>
+
+					<h3 class="mercury__user-intro"></h3>
+				</div>
+				<figure>
+					<img src="img/venus2.png" alt="mercury">
+				</figure>
+			</div>
+		</div>
+	</section>
+s
+	<section class="mars-section">
+		<div class="wrapper">
+			<div class="planet__container">
+				<figure>
+					<img src="img/mars4.png" alt="mercury">
+				</figure>
+				<div class="planet__user-results">
+					<h3 class="planet__name">Mercury</h3>
+					<p class="planet__description">The first planet in our solar system. It takes only 88 days to orbit the sun! A day on Mercury lasts 58 days 15 hours and 30 minutes. </p>
+
+					<h3 class="mercury__user-intro"></h3>
+				</div>
+			</div>
+	</section>
+
+	<section class="jupiter-section">
+		<div class="wrapper">
+			<div class="planet__container">
+				<figure>
+					<img src="img/jupiter5.png" alt="mercury">
+				</figure>
+				<div class="planet__user-results">
+					<h3 class="planet__name">Mercury</h3>
+					<p class="planet__description">The first planet in our solar system. It takes only 88 days to orbit the sun! A day on Mercury lasts 58 days 15 hours and 30 minutes. </p>
+
+					<h3 class="mercury__user-intro"></h3>
+				</div>
+			</div>
+		</div> <!-- End of jupiter wrapper -->
+	</section>
+
+	<section class="saturn-section">
+		<div class="wrapper">
+			<div class="planet__container">
+				<figure>
+					<img src="img/saturn6.png" alt="mercury">
+				</figure>
+				<div class="planet__user-results">
+					<h3 class="planet__name">Mercury</h3>
+					<p class="planet__description">The first planet in our solar system. It takes only 88 days to orbit the sun! A day on Mercury lasts 58 days 15 hours and 30 minutes. </p>
+
+					<h3 class="mercury__user-intro"></h3>
+				</div>
+			</div>
+		</div> <!-- End of saturn wrapper -->
+	</section>
+
+	<section class="uranus-section">
+		<div class="wrapper">
+			<div class="planet__container">
+				<figure>
+					<img src="img/uranus7.png" alt="mercury">
+				</figure>
+				<div class="planet__user-results">
+					<h3 class="planet__name">Mercury</h3>
+					<p class="planet__description">The first planet in our solar system. It takes only 88 days to orbit the sun! A day on Mercury lasts 58 days 15 hours and 30 minutes. </p>
+
+					<h3 class="mercury__user-intro"></h3>
+				</div>
+			</div>
+		</div> <!-- End of uranus wrapper -->
+	</section>
+
+	<section class="neptune-section">
+		<div class="wrapper">
+			<div class="planet__container">
+				<figure>
+					<img src="img/neptune8.png" alt="mercury">
+				</figure>
+				<div class="planet__user-results">
+					<h3 class="planet__name">Mercury</h3>
+					<p class="planet__description">The first planet in our solar system. It takes only 88 days to orbit the sun! A day on Mercury lasts 58 days 15 hours and 30 minutes. </p>
+
+					<h3 class="mercury__user-intro"></h3>
+				</div>
+			</div>
+		</div> <!-- End of neptune wrapper -->
+	</section>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/particles.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/*
+font-family: 'Inconsolata', monospace;
+font-family: 'Josefin Sans', sans-serif;*/
+
+
+// TYPOGRAPHY
+
+h1, h2, h3, p {
+	letter-spacing: 1.5px;
+}
+
+.hero__title,
+.hero__subtitle {
+	text-align: center;
+	max-width: 650px;
+}
+// H1
+.hero__title {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 3.5rem;
+
+	&--white {
+		color: $white;
+	}
+	&--thin {
+		font-weight: 400;
+	}
+}
+// Paragraph
+.hero__subtitle {
+	font-size: 1.8rem;
+	font-family: 'Inconsolata', monospace;
+	&--light-blue {
+		color: $lightBlue;
+	}
+	&--centered {
+		text-align: center;
+	}
+}
+
+
+//H2
+.section-title {
+	font-size: 2.8rem;
+	font-family: 'Josefin Sans', sans-serif;
+
+	&--white{	
+	color: $white;
+	}
+	&--centered {
+		text-align: center;
+	}
+	&--thin {
+		font-weight: 400;
+	}
+}
+
+// H3
+.section-subtitle {
+	font-size: 1.8rem;
+	font-family: 'Josefin Sans', sans-serif;
+	&--orange {
+		color: $orange;
+	}
+	&--centered {
+		text-align: center;
+	}
+}
+
+// H3
+.hello-user {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	font-size: 1.6rem;
+	padding: 10px;
+	color: $white;
+	line-height: 1.5;
+}
+
+.planet__name {
+	color: $lightBlue;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.planet__description {
+	text-align: center;
+	padding: 10px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: $white;
+}
+
+.planet__greeting {
+	text-align: center;
+	color: $lightBlue;
+	font-family: 'Josefin Sans', sans-serif;
+	padding-top: 50px;
+	font-weight: 400;
+	font-size: 1.4rem;
+}
+
+.mercury__user-response {
+	color: $white;
+	text-align: center;
+	font-family: 'Inconsolata', monospace;
+	padding: 15px;
+}
